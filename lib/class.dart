@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getxproject/screen1.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -82,7 +83,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Center(
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.to( SecondPage(name: 'Groot',));
+                        },
                         child: Text("Go to the next screen"),
                       ),
                     )
@@ -110,3 +113,67 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+
+// class Screen2 extends StatefulWidget {
+//   const Screen2({super.key});
+//
+//   @override
+//   State<Screen2> createState() => _Screen2State();
+// }
+//
+// class _Screen2State extends State<Screen2> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return
+//
+//       Column(
+//         children: [
+//           Card(
+//             child: Container(
+//               height: 200,
+//               width: 400,
+//               color: Colors.yellow,
+//               child: OutlinedButton(
+//                 onPressed: (){
+//
+//
+//                   Get.back();
+//                 }, child: Text(" Back to previous screen"),
+//
+//               ),
+//
+//
+//
+//
+//
+//             ),
+//
+//
+//
+//           ),
+//
+//               Expanded(
+//                   child:  Container(
+//                     margin: EdgeInsets.only(bottom: 10),
+//                     height: 40,
+//                     width: 100,
+//                     color: Colors.white,
+//                     child: OutlinedButton(
+//                       onPressed: () {
+//                         Get.changeTheme(ThemeData.dark());
+//                       },
+//                       child: Text('Light Theme'),
+//                     ),
+//                   ),
+//               ),
+//             ],
+//           );
+//
+//
+//
+//
+//
+//
+//   }
+//}
