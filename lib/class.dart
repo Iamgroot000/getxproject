@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getxproject/screen1.dart';
 
+import 'home_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -94,7 +96,17 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
-        ],
+          OutlinedButton(onPressed: (){
+            Get.to(Homesscreeen());
+
+          }, child: Text("Homescreen")),
+
+    // OutlinedButton(onPressed: (){
+    // Get.to(page)
+    //
+    // }, child: Text("Change your language ")),
+    ]
+
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -109,7 +121,9 @@ class _HomeScreenState extends State<HomeScreen> {
               onTap: (snap) {},
               mainButton: TextButton(onPressed: () {}, child: Text("click")));
         },
+
       ),
+
     );
   }
 }
